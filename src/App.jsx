@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 const { TabPane } = Tabs;
 
-// 从环境变量获取 API 地址
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+// 直接写死后端 API 地址（Render 上的 Flask 后端地址）
+const API_BASE_URL = 'https://flask-react-c6yd.onrender.com';
 console.log("API_BASE_URL =", API_BASE_URL);
 
 function App() {
@@ -80,6 +80,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
